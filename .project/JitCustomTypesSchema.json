@@ -1,0 +1,259 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|3kVJXYX62vtZcUqBho8J5591mAYe4DEtTpr0M0eRoA",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Company",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Title",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Date Applied",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Applied Via",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Location",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Salary Range",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Offer / No Offer",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Accepted / Turned Down",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Rejection/Offer Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "First Interview Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Second Interview Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Third Interview Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Link to Job Description",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Notes",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "ReadRangeConnections`1_1|DataTable|prh49LL27403z99WerHsi2cp03cjUWefvWIjGWqnE",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 2,
+        "idRef": "ReadRangeConnections`1_2",
+        "hash": "ReadRangeConnections`1_2|DataTable|wZmHSTsdO1MNhEfkckMTMk2UB8pYfToNIBJR7Ht9XU",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Company",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Title",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Date Applied",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Applied Via",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Location",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Salary Range",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Offer / No Offer",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Accepted / Turned Down",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Rejection/Offer Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Recruiter Contact",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "First Interview Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Second Interview Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Third Interview Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Link to Job Description",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Notes",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable2",
+        "hash": "ReadRangeConnections`1_2|DataTable|gmMkBOUAoBkrC0eHwkbSmDWrk4hH1oAdb8QXoWDQs",
+        "assemblyName": "Studio.Generated.TypedDataTable2"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 3,
+        "idRef": "ReadRangeConnections`1_3",
+        "hash": "ReadRangeConnections`1_3|DataTable|Rde093zuYLW5dNiJGbOaedQLgnmrtOUhS84NoeNw",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Company",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Title",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Date Applied",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Week of Year",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Applied Via",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Location",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Salary Range",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Offer / No Offer",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Accepted / Turned Down",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Rejection/Offer Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Recruiter Contact",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "First Interview Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Second Interview Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Third Interview Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Link to Job Description",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Notes",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable3",
+        "hash": "ReadRangeConnections`1_3|DataTable|ApupBjzyPpU7WsQtnfCah1HLgZbUzgju1xQKRJxH4",
+        "assemblyName": "Studio.Generated.TypedDataTable3"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 4,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|Glz6cQP7pJXMvdNp0koGWk3BCQWWAG64QDmEqzIo",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Hours",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable4",
+        "hash": "ReadRangeConnections`1_1|DataTable|qTeefrfyOqnXL6BNBzQTTulGo8WumBcnwWvuaNi89E",
+        "assemblyName": "Studio.Generated.TypedDataTable4"
+      }
+    }
+  ]
+}
