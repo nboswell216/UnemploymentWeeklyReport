@@ -1,0 +1,560 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="HoursWorkedQuestionaire" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1874,9659.333333333334" sap2010:WorkflowViewState.IdRef="HoursWorkedQuestionaire_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Sheets.Models</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GoogleCloud.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable3</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="HoursWorkedQuestionaire" sap:VirtualizedContainerService.HintSize="1458,9594.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_JobApplications" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1396,438" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,318" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="434,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="s:DateTime">[TwoSundaysAgo]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="s:DateTime">[DateTime.Now.AddDays(-1 * (DateTime.Now.DayOfWeek - DayOfWeek.Sunday + 7)).Date]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign.To>
+              <OutArgument x:TypeArguments="s:DateTime">[LastSaturday]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="s:DateTime">[DateTime.Now.AddDays(-1 * (DateTime.Now.DayOfWeek - DayOfWeek.Saturday + 7)).Date]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="1396,713.3333333333334" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="540,585.3333333333334" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath=".templates\Job Applications Tracker Template.xlsx">
+        <ueab:ExcelApplicationCard.Body>
+          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,282" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,197.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Hours Worked&quot;)]" SaveTo="[dt_JobApplications]" />
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelApplicationCard.Body>
+      </ueab:ExcelApplicationCard>
+    </ueab:SequenceX>
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Date_DateTime" DataTable="[dt_JobApplications]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="1396,231.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+    <ui:FilterDataTable DataTable="[dt_JobApplications]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="1396,204" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_JobApplications]" SelectColumnsMode="Remove">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Date"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_JobApplications]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1396,526" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,318" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="434,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[CurrentRow("Date_DateTime")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[CDate(CurrentRow("Date"))]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:DateTime">[LastDayWorked]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:DateTime">[If(LastDayWorked &lt; CDate(CurrentRow("Date")), CDate(CurrentRow("Date")), LastDayWorked)]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:FilterDataTable DataTable="[dt_JobApplications]" DisplayName="Filter Data Table - Only Week being reported" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="1396,204" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_JobApplications]" SelectColumnsMode="Remove">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="LTE">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Date_DateTime"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="s:DateTime">[LastSaturday]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="GTE">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Date_DateTime"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="s:DateTime">[TwoSundaysAgo]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_JobApplications]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1396,633.3333333333334" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,425.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="thisRowHours" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Hours" DisplayName="Get Row Item - Hours Worked for this Day" sap:VirtualizedContainerService.HintSize="434,232.66666666666666" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[CurrentRow]">
+              <ui:GetRowItem.Value>
+                <OutArgument x:TypeArguments="x:String">[thisRowHours]</OutArgument>
+              </ui:GetRowItem.Value>
+            </ui:GetRowItem>
+            <Assign DisplayName="Add this row hours to total HoursWorked" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Double">[HoursWorked]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Double">[HoursWorked + CDbl(thisRowHours)]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="1396,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Boolean">[DidWorkThisWeek]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Boolean">[HoursWorked &gt; 0]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1396,184.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[$&quot;You worked {HoursWorked} hours during the reporting time period. The last day worked was {LastDayWorked}&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Claimant eServices" sap:VirtualizedContainerService.HintSize="1396,6246.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1362,6004.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[DidWorkThisWeek]" DisplayName="Fill Out Form if Work done" sap:VirtualizedContainerService.HintSize="1300,713.3333333333334" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,266.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#6" CvElementArea="1514, 841, 187, 37" CvTextArea="1593, 852, 31, 18" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="1519, 846, 181, 29" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='presentation' tableRow='1' tag='TABLE' /&gt;&lt;webctrl parentid='m-y' tableRow='6' tag='SPAN' aaname='Yes' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl parentid='m-y' type='' tag='SPAN' aaname='Yes' class='ui-button-text' check:text='Yes' /&gt;" Guid="8446a002-e7c2-424c-b6bc-2e403f2716b0" InformativeScreenshot="3ae7b0c013f5a1187d98f4d3e0f67558.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,266.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'No'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#6" CvElementArea="1700, 840, 190, 40" CvTextArea="1783, 853, 24, 15" CvTextArgument="No" CvType="Button" DesignTimeRectangle="1704, 843, 185, 35" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='presentation' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='No' parentid='m-y' tableRow='6' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='No' parentid='m-y' type='' tag='SPAN' class='ui-button-text' check:innerText='No' /&gt;" Guid="5568560a-ede2-4898-a882-6c76fd433405" InformativeScreenshot="e6549a79739750c483c46c13754b0162.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Else>
+            </If>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="1300,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#2" CvTextArea="2559, 1318, 39, 16" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="2539, 1300, 105, 53" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='k-o1' tag='BUTTON' aaname='Next' /&gt;" FuzzySelectorArgument="&lt;webctrl id='k-o1' tag='BUTTON' aaname='Next' type='button' class='DocFieldButton   EnabledLink ShowInvalidLink FastEvtLinkClick' check:text='Next' /&gt;" Guid="6d5d6581-5652-497a-835b-99f7f12ef367" InformativeScreenshot="937c4f64550a58bc1afffc1e10d93bc8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <If Condition="[DidWorkThisWeek]" sap:VirtualizedContainerService.HintSize="1300,5004.666666666667" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="900,2650.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message - &quot;Entering hours worked during this period&quot;" sap:VirtualizedContainerService.HintSize="838,187.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Entering hours worked during this period&quot;]" />
+                  <uix:NCheckState DisplayName="Check App State 'Work for'" sap:VirtualizedContainerService.HintSize="838,935.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#7" CvTextArea="1545, 907, 144, 16" CvTextArgument="FREELAND SPIRITS" CvType="Text" DesignTimeRectangle="1547, 904, 141, 23" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='m*' tableRow='1' tag='TABLE' /&gt;&lt;webctrl parentid='c*' tableRow='2' tag='A' aaname='FREELAND SPIRITS' /&gt;" FuzzySelectorArgument="&lt;webctrl id='m*' tag='TABLE' /&gt;&lt;webctrl parentid='c*' type='' tag='A' aaname='FREELAND SPIRITS' class='FastEvtTableSelectRow' check:text='FREELAND SPIRITS' /&gt;" Guid="cc8e9176-1a1f-413b-853d-fa2dfc50f91a" InformativeScreenshot="aa2357ef8569bacdb7813b390e881816.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence sap:VirtualizedContainerService.HintSize="450,674" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="NClick Add Another Employer" sap:VirtualizedContainerService.HintSize="388,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#11" CvElementArea="1513, 890, 303, 37" CvTextArea="1575, 900, 177, 21" CvTextArgument="Add another employer" CvType="Button" DesignTimeRectangle="1515, 892, 300, 33" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='v*' tag='TABLE' /&gt;&lt;webctrl id='m*' tableRow='1' tag='BUTTON' aaname='Add another employer' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='v*' tag='TABLE' /&gt;&lt;webctrl id='m*' type='button' tag='BUTTON' aaname='Add another employer' class='DocFieldButton   EnabledLink HideInvalidLink FastEvtLinkClick' check:text='Add another employer' /&gt;" Guid="294900e9-2f03-40a3-bfe8-a1591fa9f786" InformativeScreenshot="11a97071d37ee6763bdd0143e5ccaedd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FREELAND SPIRITS'" sap:VirtualizedContainerService.HintSize="388,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#12" CvTextArea="1276, 891, 143, 16" CvTextArgument="FREELAND SPIRITS" CvType="Text" DesignTimeRectangle="1277, 879, 291, 41" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='EmploymentFilter Employer Address' aria-label='Employment' tag='TABLE' /&gt;&lt;webctrl tag='A' aaname='FREELAND SPIRITS' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='EmploymentFilter Employer Address' aria-label='Employment' tag='TABLE' /&gt;&lt;webctrl tag='A' aaname='FREELAND SPIRITS' type='' class='DocFieldLink' check:text='FREELAND SPIRITS' /&gt;" Guid="065e0df9-d4d4-4186-bf8e-4bd88c584c5d" InformativeScreenshot="bbef58cb60666d087065972f4641c84e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvElementArea="2654, 498, 28, 28" CvTextArea="1252, 502, 70, 19" CvTextArgument="Request" CvType="CloseButton" DesignTimeRectangle="1245, 491, 1449, 41" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div' idx='6' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle' tag='DIV' aaname='' check:innerText='Request&amp;#xD;&amp;#xA;Close' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#7" CvTextArea="1545, 907, 144, 16" CvTextArgument="FREELAND SPIRITS" CvType="Text" DesignTimeRectangle="1547, 904, 141, 23" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='m*' tableRow='1' tag='TABLE' /&gt;&lt;webctrl parentid='c*' tableRow='2' tag='A' aaname='FREELAND SPIRITS' /&gt;" FuzzySelectorArgument="&lt;webctrl id='m*' tag='TABLE' /&gt;&lt;webctrl parentid='c*' type='' tag='A' aaname='FREELAND SPIRITS' class='FastEvtTableSelectRow' check:text='FREELAND SPIRITS' /&gt;" Guid="cc8e9176-1a1f-413b-853d-fa2dfc50f91a" InformativeScreenshot="aa2357ef8569bacdb7813b390e881816.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#10" CvTextArea="1545, 907, 144, 16" CvTextArgument="FREELAND SPIRITS" CvType="Text" DesignTimeRectangle="1547, 904, 141, 23" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='m*' tableRow='1' tag='TABLE' /&gt;&lt;webctrl parentid='c*' tableRow='2' tag='A' aaname='FREELAND SPIRITS' /&gt;" FuzzySelectorArgument="&lt;webctrl id='m*' tag='TABLE' /&gt;&lt;webctrl parentid='c*' type='' tag='A' aaname='FREELAND SPIRITS' class='FastEvtTableSelectRow' check:text='FREELAND SPIRITS' /&gt;" Guid="e5712511-c520-4e37-ac68-590d5f5650b3" InformativeScreenshot="bdebbc15c8c7e6efc56ad1e61d9f1feb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                  <uix:NCheckState DisplayName="Check App State 'Earnings'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="838,1443.3333333333333" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1199.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Hours worked'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Text="[HoursWorked.ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#7" CvElementArea="1434, 625, 154, 36" CvType="InputBox" DesignTimeRectangle="1437, 626, 150, 33" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='m-*' tag='INPUT' type='text' aaname='Hours worked' /&gt;" FuzzySelectorArgument="&lt;webctrl name='m-*' tag='INPUT' type='text' aaname='Hours worked' class='FieldEnabled Field DocControlCurrency FastEvtFieldKeyDown FastEvtFieldFocus' /&gt;" Guid="dfa51eaa-4783-4f97-b822-11f66d4ef39f" InformativeScreenshot="3ff0b7e60e657422ef5bc347e1f45cd2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="1255, 634, 109, 17" CvTextArgument="Hours worked" CvType="Text" DesignTimeRectangle="1257, 626, 177, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' idx='6' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='CGHAlignLeft CGVAlignCenter CGD' tag='LABEL' aaname='' check:innerText='Hours worked' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Gross earnings'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Text="[(HoursWorked*15.45).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#7" CvElementArea="1779, 624, 228, 36" CvType="InputBox" DesignTimeRectangle="1782, 626, 225, 33" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='m-*' tag='INPUT' type='text' aaname='Gross earnings' /&gt;" FuzzySelectorArgument="&lt;webctrl name='m-*' tag='INPUT' type='text' aaname='Gross earnings' class='FieldEnabled Field DocControlCurrency FastEvtFieldKeyDown FastEvtFieldFocus' /&gt;" Guid="a459a7f7-b457-4924-9a45-5c98fee45abd" InformativeScreenshot="21fb4c99ded57e671ce9ab064ac97985.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="1600, 634, 117, 19" CvTextArgument="Gross earnings" CvType="Text" DesignTimeRectangle="1602, 626, 177, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;label' idx='7' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='CGHAlignLeft CGVAlignCenter CGD' tag='LABEL' aaname='' check:innerText='Gross earnings' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'No'" sap:VirtualizedContainerService.HintSize="388,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#8" CvElementArea="1894, 759, 113, 36" CvTextArea="1938, 771, 24, 16" CvTextArgument="No" CvType="Button" DesignTimeRectangle="1896, 761, 110, 35" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='No' class='ui-button-text' parentname='DocumentForm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='No' class='ui-button-text' parentname='DocumentForm' tag='SPAN' type='' check:text='No' /&gt;" Guid="2ded1ab1-68e4-45a6-8997-8bb1a17d5b26" InformativeScreenshot="7691eace1215726ebe6d30aaefec0f7e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#7" CvElementArea="1781, 780, 109, 58" CvTextArea="1824, 801, 27, 16" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1785, 782, 105, 53" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='m-*' tag='BUTTON' aaname='OK' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='m-*' tag='BUTTON' aaname='OK' type='button' class='ActionButton ActionButtonOK' check:text='OK' /&gt;" Guid="4c3ba41b-71b3-44bf-b3dc-8f56489cd3cd" InformativeScreenshot="eb5e67b8869cf9494d6c4bba6f4c8db3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="388,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#2" CvTextArea="2559, 1318, 39, 16" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="2539, 1300, 105, 53" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='k-o1' tag='BUTTON' aaname='Next' /&gt;" FuzzySelectorArgument="&lt;webctrl id='k-o1' tag='BUTTON' aaname='Next' type='button' class='DocFieldButton   EnabledLink ShowInvalidLink FastEvtLinkClick' check:text='Next' /&gt;" Guid="6d5d6581-5652-497a-835b-99f7f12ef367" InformativeScreenshot="937c4f64550a58bc1afffc1e10d93bc8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#7" CvTextArea="1252, 501, 73, 21" CvTextArgument="Earnings" CvType="Text" DesignTimeRectangle="1254, 497, 695, 26" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='ui-id-*' tag='SPAN' aaname='Earnings' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ui-id-*' tag='SPAN' aaname='Earnings' type='' class='ui-dialog-title' check:text='Earnings' /&gt;" Guid="7350d504-66c8-4fba-a9e1-68cc8e49667d" InformativeScreenshot="8b18de8d29a19396fdd138d7199df38e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1266,2188.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState DisplayName="Check App State - If Washington doesn't believe I didn't work - Click on 'FREELAND SPIRITS'" sap:VirtualizedContainerService.HintSize="1204,2104" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="900,1860" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:Int32" Name="RetryCounter" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FREELAND SPIRITS'" sap:VirtualizedContainerService.HintSize="838,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#9" CvTextArea="1545, 954, 144, 16" CvTextArgument="FREELAND SPIRITS" CvType="Text" DesignTimeRectangle="1547, 950, 141, 23" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='m-j1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl parentid='c_m-e1-1' tableRow='2' tag='A' aaname='FREELAND SPIRITS' /&gt;" FuzzySelectorArgument="&lt;webctrl id='m-j1' tag='TABLE' /&gt;&lt;webctrl parentid='c_m-e1-1' type='' tag='A' aaname='FREELAND SPIRITS' class='FastEvtTableSelectRow' check:text='FREELAND SPIRITS' /&gt;" Guid="2151893b-b49b-4675-bad4-c739cd374791" InformativeScreenshot="b9dd69dd2860165f680e71e32acdb7a3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <ui:LogMessage DisplayName="Log Message - &quot;Describing Last Day Worked&quot;" sap:VirtualizedContainerService.HintSize="838,187.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Describing Last Day Worked&quot;]" />
+                        <uix:NCheckState DisplayName="Wait for 'Earnings' popup" sap:VirtualizedContainerService.HintSize="838,1382.6666666666667" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1136" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="388,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#9" CvElementArea="1779, 624, 117, 37" CvTextArea="1822, 636, 30, 16" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="1783, 627, 112, 35" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='ui-button-text' parentname='DocumentForm' tag='SPAN' aaname='Yes' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ui-button-text' parentname='DocumentForm' tag='SPAN' aaname='Yes' type='' check:text='Yes' /&gt;" Guid="6fb9ecc2-53b5-463b-a0d1-a572bc8b4c0a" InformativeScreenshot="6a922a00c09a5140be201af4c24166ab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Date for LastDayWorked" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,262.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Text="[LastDayWorked.ToShortDateString]" Version="V3">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#9" CvElementArea="1778, 712, 225, 39" CvType="InputBox" DesignTimeRectangle="1782, 715, 225, 33" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='m-0163-1' tag='INPUT' aaname='What is the last day you worked for FREELAND SPIRITS?' /&gt;" FuzzySelectorArgument="&lt;webctrl id='m-0163-1' tag='INPUT' aaname='What is the last day you worked for FREELAND SPIRITS?' type='text' class='DocControlDate FastEvtFieldKeyDown FastEvtFieldFocus hasDatepicker FieldEnabled FieldRequired' placeholder='Required   ' /&gt;" Guid="831a8603-5f66-48e1-81eb-c42b6bb9e736" InformativeScreenshot="bedcebdcdc1925a380052612cac431df.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CvTextArea="1254, 723, 426, 16" CvTextArgument="What is the last day you worked for FREELAND SPIRITS?" CvType="Text" DesignTimeRectangle="1257, 715, 522, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='container_m-0163-1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='container_m-0163-1' tag='LABEL' type='' class='CGHAlignLeft CGVAlignCenter CGD' aaname='' check:innerText='What is the last day you worked for FREELAND SPIRITS?' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NSelectItem DisplayName="Select Item 'Required'" sap:VirtualizedContainerService.HintSize="388,199.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Leave of absence" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                                <uix:NSelectItem.Items>
+                                  <scg:List x:TypeArguments="x:String" Capacity="8">
+                                    <x:String>Required</x:String>
+                                    <x:String>Fired</x:String>
+                                    <x:String>Laid off</x:String>
+                                    <x:String>Leave of absence</x:String>
+                                    <x:String>Quit</x:String>
+                                    <x:String>Strike</x:String>
+                                    <x:String>Suspended</x:String>
+                                    <x:String>Temporarily out of work to attend mandatory apprenticeship training</x:String>
+                                  </scg:List>
+                                </uix:NSelectItem.Items>
+                                <uix:NSelectItem.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#9" CvElementArea="1253, 787, 756, 39" CvType="InputBox" DesignTimeRectangle="1257, 790, 750, 33" DesignTimeScaleFactor="1.5" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='m-0183-1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='m-0183-1' tag='SELECT' type='' class='DocControlCombobox FastEvtFieldKeyDown FastEvtFieldFocus FieldEnabled FieldRequired watermark' aaname='Required' /&gt;" Guid="39c0b024-fbc3-45b1-9371-1d4684931e16" ImageBase64="" InformativeScreenshot="f45d80e58f3dfba79785b12283cb923d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                </uix:NSelectItem.Target>
+                              </uix:NSelectItem>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#110" CvElementArea="1781, 847, 111, 58" CvTextArea="1824, 867, 27, 16" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1785, 849, 105, 53" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='m-0102' tag='BUTTON' aaname='OK' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='m-0102' tag='BUTTON' aaname='OK' type='button' class='ActionButton ActionButtonOK' check:text='OK' /&gt;" Guid="09276028-9b43-4664-8ca3-4fd08de91889" InformativeScreenshot="15cba54e353395a56df56285d80131df.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="388,184.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9667720-bbd2-48cd-9b2a-053c1a7295ab" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#2" CvTextArea="2559, 1318, 39, 16" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="2539, 1300, 105, 53" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='k-o1' tag='BUTTON' aaname='Next' /&gt;" FuzzySelectorArgument="&lt;webctrl id='k-o1' tag='BUTTON' aaname='Next' type='button' class='DocFieldButton   EnabledLink ShowInvalidLink FastEvtLinkClick' check:text='Next' /&gt;" Guid="6d5d6581-5652-497a-835b-99f7f12ef367" InformativeScreenshot="937c4f64550a58bc1afffc1e10d93bc8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Throw Exception="[new Exception]" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#9" CvTextArea="1252, 501, 73, 21" CvTextArgument="Earnings" CvType="Text" DesignTimeRectangle="1254, 497, 695, 26" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='ui-id-3' tag='SPAN' aaname='Earnings' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ui-id-3' tag='SPAN' aaname='Earnings' type='' class='ui-dialog-title' check:text='Earnings' /&gt;" Guid="171af260-a1c6-4f77-ad76-922add33e577" InformativeScreenshot="3f011c050803a57c340e0e51bc6f4740.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                          </uix:NCheckState.Target>
+                        </uix:NCheckState>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/bcs/eservices/_/#9" CvTextArea="1545, 954, 144, 16" CvTextArgument="FREELAND SPIRITS" CvType="Text" DesignTimeRectangle="1547, 950, 141, 23" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='m-j1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl parentid='c_m-e1-1' tableRow='2' tag='A' aaname='FREELAND SPIRITS' /&gt;" FuzzySelectorArgument="&lt;webctrl id='m-j1' tag='TABLE' /&gt;&lt;webctrl parentid='c_m-e1-1' type='' tag='A' aaname='FREELAND SPIRITS' class='FastEvtTableSelectRow' check:text='FREELAND SPIRITS' /&gt;" Guid="e06ac4eb-ed30-4906-9238-fc92b033f8fe" InformativeScreenshot="607bafb5157e54eb6fc58d771af915ac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 3862, 2110" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a24aa169713d9f1c55ac71e00415279f.jpg" Selector="&lt;html app='chrome.exe' htmlwindowname='*' title='Claimant eServices' /&gt;" Title="Claimant eServices" Url="https://secure.esd.wa.gov/bcs/eservices/_/#6" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

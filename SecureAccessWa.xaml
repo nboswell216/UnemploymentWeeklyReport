@@ -1,0 +1,317 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SecureAccessWa" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="SecureAccessWa_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.GoogleCloud</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="SecureAccessWa" sap:VirtualizedContainerService.HintSize="634,637.3333333333334" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,74.66666666666667</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.16666666666667 300,107.33333333333334</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID2</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,107.33333333333334</av:Point>
+          <av:Size x:Key="ShapeSize">200,25.333333333333332</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,132.66666666666669 300,177.33333333333334</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Open Secure Access Washington" sap:VirtualizedContainerService.HintSize="1021.3333333333335,3802" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Browser Chrome: Claimant eServices" sap:VirtualizedContainerService.HintSize="959.3333333333334,3714" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="Always" OutUiElement="{x:Null}" ScopeGuid="09b84db7-406a-4420-aefe-b622743c1780" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}" WindowResize="Maximize">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="925.3333333333334,3472" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="EnteredUsername" />
+                  <Variable x:TypeArguments="ui:UiElement" Name="OpenUnemploymentButton" />
+                  <Variable x:TypeArguments="ui:UiElement" Name="AuthenticatorButton" />
+                  <Variable x:TypeArguments="ui:UiElement" Name="OtpCodeInput" />
+                  <Variable x:TypeArguments="x:String" Name="OtpTextEntered" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InterruptibleDoWhile Condition="[string.IsNullOrEmpty(EnteredUsername)]" CurrentIndex="{x:Null}" DisplayName="Ask User to Enter Usename and Password before proceeding" sap:VirtualizedContainerService.HintSize="863.3333333333334,549.3333333333334" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1" MaxIterations="5">
+                  <ui:InterruptibleDoWhile.Body>
+                    <Sequence DisplayName="Check Username field" sap:VirtualizedContainerService.HintSize="416,393.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MessageBox AutoCloseAfter="00:00:00" Buttons="Ok" Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Instruct User to Login and 2FA" sap:VirtualizedContainerService.HintSize="354,126.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Enter Username and Password. Press 'OK' when done.&quot;]" TopMost="True" />
+                      <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text 'Username'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NGetText_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="09b84db7-406a-4420-aefe-b622743c1780" ScrapingOptions="{x:Null}" TextString="[EnteredUsername]" Timeout="{x:Null}" Version="V3" WordsInfo="{x:Null}">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/home/" CvElementArea="1158, 1660, 738, 55" CvType="InputBox" DesignTimeRectangle="1162, 1662, 733, 51" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' aaname='Username:' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' aaname='Username:' type='text' class='form-control' placeholder='Username' /&gt;" Guid="45d5d8c2-a5f7-4c9a-ba61-5d1febb63f78" ImageBase64="" InformativeScreenshot="0ec2971a7b7ead303417157f6d44da53.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Employment Security - Login' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvTextArea="1161, 1629, 114, 19" CvTextArgument="Username:" CvType="Text" DesignTimeRectangle="1162, 1625, 114, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Username:' check:innerText='Username:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                    </Sequence>
+                  </ui:InterruptibleDoWhile.Body>
+                </ui:InterruptibleDoWhile>
+                <Pick sap:VirtualizedContainerService.HintSize="863.3333333333334,672" sap2010:WorkflowViewState.IdRef="Pick_1">
+                  <PickBranch sap:VirtualizedContainerService.HintSize="384.6666666666667,584.6666666666666" sap2010:WorkflowViewState.IdRef="PickBranch_1">
+                    <PickBranch.Trigger>
+                      <uix:NCheckState DisplayName="Check App State 'Sign in'" EnableIfExists="False" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="334,181.33333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="09b84db7-406a-4420-aefe-b622743c1780" Version="V3">
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/home/" CvElementArea="1158, 1858, 108, 56" CvTextArea="1179, 1875, 67, 25" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="1162, 1862, 103, 50" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='SignIn' tag='BUTTON' aaname='Sign in' /&gt;" FuzzySelectorArgument="&lt;webctrl id='SignIn' tag='BUTTON' aaname='Sign in' type='submit' class='btn btn-primary' check:text='Sign in' /&gt;" Guid="e6821907-7952-432f-9483-0df8c54bd569" InformativeScreenshot="bb690a589ffa77f9fb70b56513553a93.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='*' title='Employment Security - Login' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                        </uix:NCheckState.Target>
+                      </uix:NCheckState>
+                    </PickBranch.Trigger>
+                    <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="09b84db7-406a-4420-aefe-b622743c1780" Timeout="{x:Null}" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/home/" CvElementArea="1158, 1843, 108, 55" CvTextArea="1179, 1860, 67, 25" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="1162, 1847, 103, 50" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='SignIn' tag='BUTTON' aaname='Sign in' /&gt;" FuzzySelectorArgument="&lt;webctrl id='SignIn' tag='BUTTON' aaname='Sign in' type='submit' class='btn btn-primary' check:text='Sign in' /&gt;" Guid="6dc78583-6818-4fc0-8960-f5954a0d77ff" InformativeScreenshot="5af25d4547fb2366e3fbc0d3430a8528.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Employment Security - Login' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </PickBranch>
+                  <PickBranch sap:VirtualizedContainerService.HintSize="384.6666666666667,584.6666666666666" sap2010:WorkflowViewState.IdRef="PickBranch_2">
+                    <PickBranch.Trigger>
+                      <uix:NCheckState ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check App State 'Apply for'" EnableIfExists="False" EnableIfNotExists="False" Exists="{x:Null}" sap:VirtualizedContainerService.HintSize="334,181.33333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_2" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="[OpenUnemploymentButton]" Result="{x:Null}" ScopeIdentifier="09b84db7-406a-4420-aefe-b622743c1780" Timeout="{x:Null}" Version="V3">
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/home/myesd/ServicePages/ServicePage" CvTextArea="1164, 705, 1245, 39" CvTextArgument="Apply for unemployment benefits or manage.y your current and past claims" CvType="Text" DesignTimeRectangle="1167, 696, 1242, 49" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Apply for unemployment benefits or manage your current and past *' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apply for unemployment benefits or manage your current and past *' tag='A' type='' class='' check:text='Apply for unemployment benefits or manage your current and past claims' /&gt;" Guid="201a4e78-9514-46ae-9414-65963aea2edd" InformativeScreenshot="6a76f63f7aca73888d634cc540136165.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Employment Security - Service Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                        </uix:NCheckState.Target>
+                      </uix:NCheckState>
+                    </PickBranch.Trigger>
+                    <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click &quot;Manage Current Claim&quot;" sap:VirtualizedContainerService.HintSize="334,141.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="{x:Null}" InUiElement="[OpenUnemploymentButton]" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" Timeout="{x:Null}" Version="V3" />
+                  </PickBranch>
+                </Pick>
+                <uix:NCheckState DisplayName="Check App State 'Apply for'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="863.3333333333334,402.6666666666667" sap2010:WorkflowViewState.IdRef="NCheckState_7" OutUiElement="[OpenUnemploymentButton]" ScopeIdentifier="09b84db7-406a-4420-aefe-b622743c1780" Version="V3">
+                  <uix:NCheckState.IfExists>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click &quot;Manage Current Claim&quot;" sap:VirtualizedContainerService.HintSize="334,141.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" InUiElement="[OpenUnemploymentButton]" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/home/myesd/ServicePages/ServicePage" CvTextArea="1164, 705, 1245, 39" CvTextArgument="Apply for unemployment benefits or manage.y your current and past claims" CvType="Text" DesignTimeRectangle="1167, 696, 1242, 49" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Apply for unemployment benefits or manage your current and past *' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apply for unemployment benefits or manage your current and past *' tag='A' type='' class='' check:text='Apply for unemployment benefits or manage your current and past claims' /&gt;" Guid="201a4e78-9514-46ae-9414-65963aea2edd" InformativeScreenshot="6a76f63f7aca73888d634cc540136165.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Employment Security - Service Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+                <uix:NCheckState ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check App State 'Enter verification'" EnableIfNotExists="False" Exists="{x:Null}" sap:VirtualizedContainerService.HintSize="863.3333333333334,402.6666666666667" sap2010:WorkflowViewState.IdRef="NCheckState_3" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="[AuthenticatorButton]" Result="{x:Null}" ScopeIdentifier="09b84db7-406a-4420-aefe-b622743c1780" Timeout="{x:Null}" Version="V3">
+                  <uix:NCheckState.IfExists>
+                    <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click Enter Code from Authenticator" sap:VirtualizedContainerService.HintSize="334,141.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="{x:Null}" InUiElement="[AuthenticatorButton]" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" Timeout="{x:Null}" Version="V3" />
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/mga/sps/authsvc?TransactionId=730c6916-27a5-4721-9768-bd662d61a159" DesignTimeRectangle="1481, 1428, 900, 150" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='mfa-single-column' tag='BUTTON' aaname='*Enter verification code from*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mfa-single-column' tag='BUTTON' aaname='*Enter verification code from*' type='' class='mfa-method-button' check:text='Enter verification code from Google Authenticator App&amp;#xA;            &amp;#xA;                Open your' /&gt;" Guid="ea64f3c2-b6ed-4dc1-ad9a-7ee7654f24b0" InformativeScreenshot="7a2d4fb04f855ecec8d1738de74b48d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureAccess Washington' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="1706, 1467, 675, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl class='mfa-method-button-explanation' parentid='mfa-single-column' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mfa-method-button-explanation' parentid='mfa-single-column' tag='DIV' type='' aaname='                 Open your authenticator app to display a code. Enter that code on the next screen.             ' check:innerText='Open your authenticator app to display a code. Enter that code on the next screen.' /&gt;" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+                <uix:NCheckState ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check App State - Wait for Code Entry to Appear" EnableIfNotExists="False" Exists="{x:Null}" sap:VirtualizedContainerService.HintSize="494,752.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_4" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="[OtpCodeInput]" Result="{x:Null}" ScopeIdentifier="09b84db7-406a-4420-aefe-b622743c1780" Timeout="{x:Null}" Version="V3">
+                  <uix:NCheckState.IfExists>
+                    <ui:InterruptibleDoWhile Condition="[string.IsNullOrEmpty(OtpTextEntered)]" CurrentIndex="{x:Null}" DisplayName="Have user enter Authentication Code" sap:VirtualizedContainerService.HintSize="450,491.3333333333333" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2" MaxIterations="5">
+                      <ui:InterruptibleDoWhile.Body>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,375.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MessageBox AutoCloseAfter="00:00:00" Buttons="Ok" Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Instruct Userto enter 2FA" sap:VirtualizedContainerService.HintSize="354,126.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Enter Authentication Code. Press 'OK' when done.&quot;]" TopMost="True" />
+                          <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text of Auth Input" sap:VirtualizedContainerService.HintSize="354,164" sap2010:WorkflowViewState.IdRef="NGetText_2" InScope="{x:Null}" InUiElement="[OtpCodeInput]" OutUiElement="{x:Null}" ScrapingOptions="{x:Null}" TextString="[OtpTextEntered]" Timeout="{x:Null}" Version="V3" WordsInfo="{x:Null}" />
+                        </Sequence>
+                      </ui:InterruptibleDoWhile.Body>
+                    </ui:InterruptibleDoWhile>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/mga/sps/authsvc?StateId=tRx8pRNSHQiG6MWFZ6YkOmMvErCLmlKznto7juLjzv3b5JT79OFeskMQD7HWPkA64WaFZAa4BwcIRCPa9LXrZlQZFeuNzCMw7Dm53RWV5Bq4pMBmfUGrj1eZin1TDUU5&amp;mfaAuditTrail=Enter%20verification%20code%20from%20Google%20Authenticator%20App" CvElementArea="1470, 1320, 456, 66" CvTextArea="1645, 1339, 102, 27" CvTextArgument="214992" CvType="Button" DesignTimeRectangle="1474, 1324, 450, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' name='otp' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' name='otp' class='text-input' aaname='' /&gt;" Guid="c6acfcbb-1b23-4b09-aced-5a20ee5f1be3" InformativeScreenshot="b05894316bec241bc56e63b3c523cc69.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureAccess Washington' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="1929, 1320, 157, 68" CvTextArea="1968, 1341, 78, 25" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1934, 1325, 150, 60" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='button' aaname='Submit' check:text='Submit' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+                <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="494,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="09b84db7-406a-4420-aefe-b622743c1780" Timeout="{x:Null}" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/mga/sps/authsvc?StateId=tRx8pRNSHQiG6MWFZ6YkOmMvErCLmlKznto7juLjzv3b5JT79OFeskMQD7HWPkA64WaFZAa4BwcIRCPa9LXrZlQZFeuNzCMw7Dm53RWV5Bq4pMBmfUGrj1eZin1TDUU5&amp;mfaAuditTrail=Enter%20verification%20code%20from%20Google%20Authenticator%20App" CvElementArea="1929, 1320, 157, 68" CvTextArea="1968, 1341, 79, 25" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1934, 1325, 150, 60" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Submit' class='button' check:text='Submit' /&gt;" Guid="f452c3d2-e153-4dc4-a062-d5c4b8a06eda" InformativeScreenshot="c59f24d52807fc10507e4ce37286bc58.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureAccess Washington' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NCheckState ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check App State 'Remember Device?'" EnableIfNotExists="False" Exists="{x:Null}" sap:VirtualizedContainerService.HintSize="494,406" sap2010:WorkflowViewState.IdRef="NCheckState_5" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Result="{x:Null}" ScopeIdentifier="09b84db7-406a-4420-aefe-b622743c1780" Timeout="{x:Null}" Version="V3">
+                  <uix:NCheckState.IfExists>
+                    <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click Submit" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="09b84db7-406a-4420-aefe-b622743c1780" Timeout="{x:Null}" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/mga/sps/authsvc?StateId=qxlEncGOvUP4xy68Ck7GYUcaPFBm963269v6TkDo5JY8IPfJv1vv1QHqC7RBT5VT5DmWIRM71SVl8ZN5IuxjDtkqWNuOVwBxegOzgFAG16Pkhztpt1c04EJCPOWkoOI0" CvElementArea="1469, 1520, 158, 67" CvTextArea="1509, 1539, 78, 25" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1474, 1524, 150, 60" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Submit' class='button' check:text='Submit' /&gt;" Guid="bd84d1e4-c991-4322-a24f-0f6cee95db8f" InformativeScreenshot="75c3ee53d2374b8f8d6f760d5461fa63.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureAccess Washington' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="https://secure.esd.wa.gov/mga/sps/authsvc?StateId=qxlEncGOvUP4xy68Ck7GYUcaPFBm963269v6TkDo5JY8IPfJv1vv1QHqC7RBT5VT5DmWIRM71SVl8ZN5IuxjDtkqWNuOVwBxegOzgFAG16Pkhztpt1c04EJCPOWkoOI0" CvTextArea="1471, 1186, 410, 48" CvTextArgument="Remember Device?" CvType="Text" DesignTimeRectangle="1444, 1180, 975, 65" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' aaname='Remember Device?' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' aaname='Remember Device?' type='' class='' check:text='Remember Device?' /&gt;" Guid="722ef462-6eb8-4cc7-9c80-ac53c1ba76bc" InformativeScreenshot="484aba3ce4a06ce24d6056869c64b554.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SecureAccess Washington' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-11, -11, 3862, 2110" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAwASURBVGhDxZl7cFTVHcd3pqOgKAQEFeQRIIQ8N5vdBAOBsHkIkUcSOu2M01GTmb7sHx1mnOlMq22DM7X1nRgeawMhPATbUsWq02kryQaSGINI9I+q40xZwIQQKNkkqAR295x+f79zzr131wCiaM/Md76/3++cm/v5nXvusgmu6zFCfk/SmRJvzZmy/LqB0rz9Z0rzQ2dL8sIDJXlyoCRfni3NR+wLoR48U5JX11fqq+r3e5L15f+fQdDnSvPXnynOCxpQ5Y642ORKp4t9WjTnE6eLvT0Dfl/1t9oMgZ8tWVR7tsQ3iN0UCtQX5wrQuF2zwXUzfq847SdnNX/jjeBY1AJaHw0NocEYjup+AqQ6QwEQkIj7DSjHXs6VTEzuxfXeWn276zdoZwaK83t4N3kHfXonbTegZlcNkAG38uWmTnGuoPwUK5dzcuSh6/Y0BvyLqgEZtnfSq3bSAnXCGjAFBQegDWl5EYEqaFZRnLiJvqLc8MllniqN8dUGPU4Da8Cs3SQ4dgDCDaCSglCuQQEGKB17BMFyzu7hWMnE8GXQUs9XO1L9Rd7auN21YBwxAShnYIoNCM/pOK62zINGPMoBqJ1j9qV23AvvXZqDJtzX1gTAq81jvuJj164A9Y5ZkNoVjILTdQYzdQATpC0FbfQJeWGO6C/yVGu8Kw96eQA7SGAMjZsSqLWDWtYu2rvJMUPBLcilObyT7IAxnigCZVhHzCo0cg/2F6Rd/cUGbMi5iwRkdtLsmrV7JA0YJ2sXE3OtQrewgCk2kEsodhOskjNfki1OLHH3aMyxB70w1i5CTvB4QAcMNNauMpx2vYMOZ4mTzhoAVe6WJ5fYrpRtRE1s0Ljxw/NSVfIzDxdbu6mhVAMWkDPOsXaRcwD1lhfK4aaAHD36joyc6pPWiIxIMXxExo4/I6M9FTLanQf5SCL6NjlychNjLmbNUd3rVFj2eJI0tj18e9ftKNpRJY+uyjeAFpwC1MB6l5y72v+9cob+skOceR2NrGGgWLdXRLtzAUvSkN3kuXCu65jWqjzS5Yl/Cp7mqmTv3u9KH/Sz361wAiZAK9Gj5seNRxquf1LGRkY0mhqnwkK+8d5FuTU4Khuhto8uyY/7o3pWjyieyomnAeQBnEc5w6o8RrUuqikBGp5j6vFPwbunqiZ3b5XI3VMlvXvWyb9//24NqM6p8yzyWVWxGNq2RdOo8XrPRfnQjk9lfu2QXLRhmD1/gxbiyvrzWHNJr1Yj9kmAwSAZ7coBKBxxjMB1HOlyq7grG/AUuzHvXq/xqYF1PYAXBE+NPPhUOcNaL9Bigs6WJ4wWZ8vB+ic0Au14TP60WYHnaeA8irW4Tq6borV0jRmx408xlAYTka5sDZsNeI6N0GiWrmcFGZ6Oj+fFSuFBA7kvVkkPRL75oaXi5OIscWJxFgPrmPO+dSuFOTYEsrZuJA7Y91tbVs0xT6JrrCbwkkePlgOe4FiAZdnxW+SZWJNp1WQwOcnl2bO20rO7UiaqsKlCfrDcLU4UZInjBdRElmQvyBTn33hV3RjjJ9vPAzTskIL1xtXCdo45k/8Y15ohhg9r6EwRg6JvZTJwtCsDcQYaQExONc6hjowal2dXRV3OrgqpVMlODeTsrhBP/HyZBR26O1OGCjJl77oV+pZSvoYzTyBjSzUxtuy5145e1D8N7/XhAhuOlW55BIp1paMZitOUOhbWu3J2rg26d1ZI964K4WzCvWutoHr3PR7J8FrnnvuDvp2Uq58dlrm/CdsCUFx+OTnW/cjxFGInN2noNBJg00RMOdcinQutuUgn5emvUgMh98618jISP/h9mTi+KEOElOSFdw/zzT7Cx6IHACQCMfGVNThGLWy9C2KoWwESKMMuVNCdqULVUlFDTEIc60wNubJ3rhHuHYCFsllrVIw6xVR7vcrLDRxDA+blbf3gkswBEOvX2jWgcmfNWYfTesis+Zs5RqO9AAYka4HDLYlIh/JoZwqOUErYld1MkIAlv4xKG8plKD9dHMtLE+pOUgZaL0g3IIwMbFxtjNjAO+tbWj7XPxXvQQeDATKFIW3NF9GO+TzPOcVwV9aO1SILkPFaLbO2QyoWmVD9Dwvksbx0qwG6qYFwKvsKeeKcqcU1QKAWrNE8pc75aI5jrJnHsStr+5pwZvMqkUnAEMXsTatUzlolFgXK5fuFGfiS1ss3evXoqMx+dFBmPXqOnUDYnXGCm7VZVHPUW3AceUSGDSA0F8dlLvK5JucaOdfbk7nmyti+KqQgV0vEwgKHG1Gd9Mv1hfLzI918rz68eASkpODGVuLcF9d+eEp9TxJDXQoUcARoFO2YI6hm6pxzbU7IlbFt1X5IZhjYbfcmxPcKFsVYd+SvjXwzGjXbhmUmADIBpfzateKZIf3T8DH6n8cAOAeg8Yq0z4bPBvRsQbGVt88JujKbVtcpOA1LzZgcSt9WLtLZ7yUX99VV6ttJuf/dizLjkXMyAyAsxATFtavIrNv/7qj+aWjgnSWAnAUwApwlYogj7bNk5NAszsktUf3gzHpXWmN5jYKEtpZLEoNvNVI1JZV3n3pf31LK6q0jMh0gRgSV/sh/LVDnXPyac7h2WP8UHJ+BfRpuJivaPhON3AXNBDhyrt2l4natQzMq8WXOn8RwjeUybetKbgJNIS4X7E5RDWtKX6qWIxc/5Rv3DsZk2VNhmQZoAk/7lXI7PmfVaI2plT0dlr36H7CR0U+x+wWAu0uBHpqh4xki6nCqRQ7NUHn7DCGDd6pf8tMaVwYhDUq+EvDwP5qarlOua4+/FeCb06AmHsRuEtwXpBtw6gGspWvMGPr4MQ1NcNMBOx3xdByR6VYebWennOuxg9PtX/AXNq5cvxBgtlYIR5xQh15QtY1HdmsENV45MipLnhyUqYBcCBk3eqBxSL7iOPM0Xn6/SQ4G6dgosMjBOy1FD90JaDu36kr234mS6/xJAAunAo7EgBqSPNWI5vWcqdGToCPgHB/2ReWb/74oG978TG488BkauxC34zRGRs/LxzsDct9r+PJ26A6h4O7QMRwiV7odOUso3YHfBfTxMQNwtRZogPwekRq4BzGE2gKdLwjAdY6Y5/177hcvf/RPjXb18Xbfe9L/4v3C37QcsLczoIKcBrhpdq1tGovglU8V7G3TmjW2PegpAGjQgC3YwrBKW8ricm7E5DSnc//u++XjHQEG/GTktMaVHFOt4fAu6dtepa7FdScO4FPFApsKyKnxcdtUNGTnkbbbWBeCSWP/hS4lsKI2RcOmBMqEBc5upHKswzzWOWKub9ZCzXKed9ZKxS/2egF7GwGyKziCnqJj0pQ4p7nYwSlX/kMvbtBjQWgZ+JTNpVrO+cTcWTPrS+X8zaUKHrE34JfH/4UXUUMxYJAgp1CufbLgWnAycggea5t8TGNefiQH/Mm4SXj+JtxUiwEcTjDKS4QB4xoLNX2dtcaZbyqR9fvSATeZIBVoW5KIQpFgkq5RTtCTuKY0KSwvd3QSx/yGkpp5m0oEydxUCfFGOAn5PLi9Rs3xdaZOzmvt65Y1LtWgNpyKJ2ngSTJq+UQRaZ3IHg0mXdv/1qRsLNvAIGOq2IK0ag3FCWtszeX1Sn95BV+NCcwABicCXDvD3groW6mmRHHLxLH/oHu1gZvXMhhEEHONM4wCQ03Ma0BMc855nRsn3deUp4AcAjBAE2u3YMcpvkXGgrd8vf+1xMdrFW4eTn7eb0M+XyyTG/yAhxCb2lysoTrP0ZqE/Pg/8HICjsDiNQH1CahPQHyziEKIw5daJtRojK830EQy4EIM+DyA6rWrXMfLKVdzRtb8cvHwziwFx6A3Sw2pXectN+G4QK0398jg+C/3wl7LAEytAZtDwPXLGXROPcXKrbhOzZEKNxdg9/GpAlCWBo223mRBR1vHIx4XjrSM/2rn/csOehqAamZYQDo1+7kibmB2PZzyuiKub/0zfg1kwPGA1TowzoqjrTcOwmvxMfnF/7j4pgY3UuevAWAPg6sGnEKtSC7ZVABIgtUCeLRlnIgcuBHg44KXguPWf6vgYw3dTBV2vG7Ws8uCgA9RE4jFn/bhl5CWG/BC3hAC9H40UXcp+J3q6wPtcv0P8b6M+c3aLu0AAAAASUVORK5CYII=" InformativeScreenshot="0ef708310202d8c51c39623a97a0bae3.jpg" Selector="&lt;html app='chrome.exe' htmlwindowname='&amp;lt;fwdc&amp;gt;FWDC.WND-7ae2-2723-a4c7&amp;lt;/fwdc&amp;gt;' title='Claimant eServices' /&gt;" Title="Claimant eServices" Url="https://secure.esd.wa.gov/home/" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Sequence>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">200,177.33333333333334</av:Point>
+              <av:Size x:Key="ShapeSize">200,25.333333333333332</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">300,202.66666666666669 300,252.66666666666669</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NavigateToWeeklyReport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,25.333333333333332" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="NavigateToWeeklyReport.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+            </ui:InvokeWorkflowFile.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeWorkflowFile>
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">200,252.66666666666669</av:Point>
+                  <av:Size x:Key="ShapeSize">200,25.333333333333332</av:Size>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="MoneyPaidQuestionaire.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,25.333333333333332" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="MoneyPaidQuestionaire.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:InvokeWorkflowFile.Arguments>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:InvokeWorkflowFile>
+            </FlowStep>
+          </FlowStep.Next>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+  </Flowchart>
+</Activity>
